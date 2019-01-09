@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+.wrapper {
+    width: 70%;
+}
+.autocomplete {
+    position: relative;
+    width: 100%;
+  }
+  
+.resultsWrapper {
+    background-color: $white;
+    position: absolute;
+    border-top: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 100%;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.items {
+    list-style-type: none;
+    padding: 5px;
+    border-bottom: 1px solid $grey;
+}

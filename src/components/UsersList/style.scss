@@ -1,0 +1,68 @@
+@import '../../styles/variables.scss';
+
+.table {
+    margin: auto;
+    margin-top: 25px;
+    border-collapse: collapse;
+    width: 90%;
+    thead {
+        border-bottom: 2px solid $main;
+        th {
+            padding: 0.35em 0 .35em;
+            font-weight: 600;
+            text-align: left;
+            font-size: 1.25em;
+        }
+    }
+
+    tbody {
+        border-bottom: 2px solid  $main;
+
+        tr {
+            border-bottom: 1px solid $grey;
+
+            td {
+                padding: .75em 0;
+            }
+        }
+    }
+}
+
+.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+i {
+    border: solid $main;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.right {
+ transform: rotate(-45deg);
+ -webkit-transform: rotate(-45deg);
+}
+
+.deleteButton {
+    background: transparent;
+    border: 1px solid $alert;
+    border-radius: 2em;
+    color: $alert;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 2px;
+    margin: 0 0 8px;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+.emptyList {
+    text-align: center;
+    font-size: 2rem;
+}

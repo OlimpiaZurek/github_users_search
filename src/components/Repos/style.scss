@@ -1,0 +1,82 @@
+@import '../../styles/variables.scss';
+
+.reposListContainer {
+    margin: 50px;
+    width: 80%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 25px;
+}
+
+i {
+    border: solid $black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+  }
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.list {
+    list-style-type: none;
+    border-bottom: 1px solid $grey;
+    padding: 15px;
+
+    p:first-of-type {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+}
+
+.reloadIcon {
+    height: 2em;
+    padding: .25em;
+    width: 2em;
+    display: block;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    &:before, &:after {
+      content: '';
+      display: block;
+    }
+    &:before {
+      border-color: transparent $black $black $black;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: .125em;
+      height: 1.5em;
+      width: 1.5em;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &:after {
+      border-color: transparent transparent transparent $black;
+      border-style: solid;
+      border-width: .3125em 0 .3125em .5em;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+    }
+  }
+
+  .refreash {
+    -webkit-animation: rotate 1s;
+    animation: rotate 1s;
+  }
+  
+  @-webkit-keyframes rotate {
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes rotate {
+    100% { transform: rotate(360deg); }
+  }
+  

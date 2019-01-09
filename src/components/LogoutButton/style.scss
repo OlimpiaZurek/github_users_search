@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.logout {
+    width: 150px;
+    height: 30px;
+    background-color: $white;
+    border-radius: 25px;
+    color: $main;
+    border: 1px solid $main;
+    &:hover {
+        background-color: $main;
+        color: $white;
+    }
+    margin-left: 25px;
+}
