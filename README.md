@@ -8,7 +8,7 @@
 
 ## General Info
 
-A personal project built with React, MobX and minimalistic styles to search users and view their repos on Gihub.
+A personal project built with React, MobX and minimalistic styles to search users and view their repos on Github.
 
 ## Technologies 
 
